@@ -1,0 +1,556 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ankit |Portfolio</title>
+    <!-- CSS file s -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- style switcher -->
+    <link rel="stylesheet" href="{% static 'color/color-1.css' %}" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="{% static 'color/color-2.css' %}" class="alternate-style" title="color-2">
+    <link rel="stylesheet" href="{% static 'color/color-3.css' %}" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="{% static 'color/color-4.css' %}" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="{% static 'color/color-5.css' %}" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}">
+
+
+    <!-- CSS files end -->
+</head>
+
+<body>
+    <!-- Main container start -->
+    <div class="main-container">
+        <!-- Aside start -->
+        <div class="aside">
+            <div class="logo3">
+                <div class="profile-img">
+                    <img src="{% static 'img/profile1.jpg' %}" alt="" class="img-fluid rounded-circle">
+                </div>
+            </div>
+            <div class="logo">
+                <a href="#"><span>A</span>ankit</a>
+            </div>
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Skills</a></li>
+                <li><a href="#project"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+            <div class="logo2">
+                <div class="social-links">
+                    <a href="https://x.com/DeveloperA18482" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ankit.47x/>" class="instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/ankit-kumar-art" class="github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ankit-kumar460/>" class="linkedin"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Aside End -->
+
+        <!-- Main content start -->
+        <div class="main-content">
+            <!-- Home section start -->
+            <section class="home active section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, My name is <span class="name">Ankit Kumar</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">""</span></h3>
+                            <p>I'm a fresh graduate super excited about web development, both the front and back ends. I'm all about diving into cool web framework like django and restAPI,Now,
+                                i am Proficient in Html ,Css ,JavaScript ,ReactJS ,BootStrap and python/django.
+                            </p>
+                            <a href="#" class="btn">Download CV</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="{% static 'img/profile1.jpg' %}" alt="Profile Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home section End -->
+
+            <!-- About section -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>About me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text">
+                                    <h3>Hello<span>Everyone</span></h3>
+                                    <p>My name is Ankit kumar. I have completed My Bachelor of Computer Application (BCA) degree from Gopal Narayan Singh University, Sasaram, Bihar. I was born and raised in dehri, Bihar. It is here that I developed my passion for technology and decided to pursue a career in this field. I am eager to apply the knowledge and skills I have acquired during my studies to solve real-world problems and make a positive impact on society.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item">
+                                            <p>Birthday: <span>1 March 2004</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Age: <span>22</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Website: <span>www.website.com</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Email: <span>developerankit213@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Degree: <span>Bachelor</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Phone: <span>8709744261</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>City: <span>Dehri</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Freelance: <span>Available</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <!-- Skill Item 1 -->
+                                        <div class="skill-item padd-15">
+                                            <h5>PYTHON</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:90%;"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skill Item 2 -->
+                                        <div class="skill-item padd-15">
+                                            <h5>DJANGO</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:90%;"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skill Item 2 -->
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:85%;"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skill Item 3 -->
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skill Item 4 -->
+                                        <div class="skill-item padd-15">
+                                            <h5>JAVASCRIPT</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:70%;"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education ">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2018 - 2019
+                                                    </h3>
+                                                    <h4 class="timeline-title">Secondary Education</h4>
+                                                    <p class="timeline-text">I have completed my Secondary edcuation from Model School Dalmainagar, Dehri (rohtas) where I passed with a commendable percentage(%) 70.2</p>
+                                                </div>
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2019 - 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">High School </h4>
+                                                    <p class="timeline-text">I have completed my higher edcuation from jag jivan college, Dehri (rohtas) where I passed with a commendable percentage(%) 67.7</p>
+                                                </div>
+                                                <!-- timeline item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2021 - 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor of computer application(BCA)</h4>
+                                                    <p class="timeline-text">I pursued my Bachelor of Computer Application (BCA) at Gopal Narayan Singh University, Sasaram (GNSU) where I graduated with a commendable CGPA of 7.77. During my academic journey, I developed a strong foundation in analytics & programming, particularly in Python.
+                                                         Additionally, I have intermediate-level skills in c/>c++, 
+                                                         demonstrating a diverse skill set that extends to analytics and web application.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <!--<div class="experience padd-15">
+                                    <h3 class="title">experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark"> -->
+                                                <!-- timeline item -->
+                                                <!-- <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2021 - 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor of computer application</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit.
+                                                        Excepturi,
+                                                        maxime illum? Voluptate eveniet optio, odio harum labore quae
+                                                        delectus. Eum asperiores doloribu
+                                                        s laborum iure quaerat animi quasi quas dolorem! Repellat.</p>
+                                                </div>
+                                                <!--timeline item -->
+                                                <!-- <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2021 - 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor of computer application</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit.          Excepturi,
+                                                        maxime illum? Voluptate eveniet optio, odio harum labore quae
+                                                        delectus. Eum asperiores doloribu
+                                                        s laborum iure quaerat animi quasi quas dolorem! Repellat.</p>
+                                                </div> -->
+                                                <!-- timeline item -->
+                                                <!--- <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2021 - 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor of computer application</h4>
+                                                    <p class="timeline-tex">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit.
+                                                        Excepturi,
+                                                        maxime illum? Voluptate eveniet optio, odio harum labore quae
+                                                        delectus. Eum asperiores doloribu
+                                                        s laborum iure quaerat animi quasi quas dolorem! Repellat.</p>
+                                                </div> -->
+                                            <!-- </div>
+                                        </div>
+                                    </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section End -->
+
+            <!-- Services Section Start -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>Skills</h2>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                              <i class="fa fa-code"></i>
+                            </div>
+                            <h4>Coding</h4>
+                            <p>
+                              Proficient in Python, with an understanding of data
+                              structures and algorithms. Intermediate knowledge of c/c++.
+                            </p>
+                          </div>
+                        </div>
+          
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                              <i class="fa fa-laptop"></i>
+                            </div>
+                            <h4>Web Development</h4>
+                            <p>
+                              Equipped with a solid foundation in both front-end and
+                              back-end web development, ready to create responsive and
+                              interactive websites.
+                            </p>
+                          </div>
+                        </div>
+          
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                              <i class="fa fa-palette"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>
+                              Adept at creating user-friendly interfaces and designs,
+                              utilizing my knowledge of HTML, CSS, and JavaScript.
+                            </p>
+                          </div>
+                        </div>
+          
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                              <i class="fa fa-database"></i>
+                            </div>
+                            <h4>Database</h4>
+                            <p>
+                              I know MySQL and Postgre, with a strong understanding of
+                              relational database management systems and expertise in 
+                              SQL.
+                            </p>
+                          </div>
+                        </div>
+          
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                              <i class="fa fa-tools"></i>
+                            </div>
+                            <h4>Tools</h4>
+                            <p>
+                              I am familiar with Git, GitHub, and VS Code.
+                            </p>
+                          </div>
+                        </div>
+          
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                              <i class="fa fa-camera"></i>
+                            </div>
+                            <h4>Photography</h4>
+                            <p>
+                              A passionate photographer with a comprehensive understanding
+                              of various photography techniques and styles.
+                            </p>
+                          </div>
+                        </div>
+          
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-video"></i>
+                            </div>
+                            <h4>video Editing</h4>
+                            <p>
+                                Expert in creating short videos through editing .
+                                Proficient in Adobe Premiere Pro, CapCut, and VN Video Editor.and
+                                Strong understanding of storytelling, transitions, audio syncing, and visual effects.
+                                and Experience with color correction, sound design.
+                            </p>
+                          </div>
+                        </div>
+          
+                        <div class="service-item padd-15">
+                          <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-brain"></i>
+                            </div>
+                            <h4>Machine Learning/AI</h4>
+                            <p>
+                              An enthusiastic learner in the field of Machine Learning and
+                              Artificial Intelligence, aiming to leverage these
+                              technologies to solve complex problems and create
+                              intelligent solutions.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            <!-- Services Section End -->
+
+            <!-- Projects Section Start-->
+            <section class="project section" id="project">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="project-heading">
+                            <h2>My Last Projects:</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Project item start -->
+                        <div class="project-item">
+                            <div class="project-item-inner shadow-dark">
+                                <div class="project-img">
+                                    <img src="{% static 'img/project1.jpeg' %}" alt="Project 1">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project item End -->
+
+                        <!-- Project item start -->
+                </div>
+
+            </section>
+            <!-- Projects Section End-->
+
+            <!-- Contact Section Start-->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title">Have You Any Question ?</h3>
+                    <h4 class="contact-sub-title">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-- contact info item start -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>8709744261</p>
+                        </div>
+                        <!-- contact info item End -->
+
+                        <!-- contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-city"></i></div>
+                            <h4>City</h4>
+                            <p>dehri</p>
+                        </div>
+                        <!-- contact info item End -->
+
+                        <!-- contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>developerankit213@gmail.com</p>
+                        </div>
+                        <!-- contact info item End -->
+
+                        <!-- contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <h4>website</h4>
+                            <p>www.ankit.com</p>
+                        </div>
+                        <!-- contact info item End -->
+                    </div>
+                    <h3 class="contact-title">SEND ME AN MESSAGES ?</h3>
+                    <h4 class="contact-sub-title">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <!-- contact form -->
+                    <div class="row">
+                        <section action="#contact" method="post">
+                            {% csrf_token %}
+                            <div class="contact-form">
+                                <div class="row">
+                                    <div class="form-item col-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name" name="name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-item col-6">
+                                        <div class="form-group">
+                                            <input type="email" required class="form-control" placeholder="Email"
+                                                name="email">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Phone Number"
+                                                name="number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12">
+                                        <div class="form-group">
+                                            <textarea name="desc" class="form-control" id=""
+                                                placeholder="How can i help you ?"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn">Send Message</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Contact Section End-->
+
+    <!-- Main content End -->
+    </div>
+    <!-- Main container end -->
+
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End -->
+
+    <!-- JS files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/style-switcher.js' %}"></script>
+    <!-- JS files end -->
+</body>
+
+</html>
