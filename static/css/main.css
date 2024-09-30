@@ -900,6 +900,10 @@ h3.my-profession
     display: block;
     margin-left: 0;
     }
+    .main-content
+    {
+        padding-left: 0;
+    }
 }
 @media (max-width:991px)
 {
@@ -907,10 +911,10 @@ h3.my-profession
     .project .project-item,
     .service .service-item
     {
-        flex:0 0 100%;
+        flex:0 0 50%;
         max-width: 50%;
     }
-    .home .home-info
+    .home .home-info 
     {
         flex:0 0 100%;
         max-width: 100%;
@@ -919,8 +923,23 @@ h3.my-profession
     {
         display: none;
     }
+    .aside .logo2
+    {
+    position:absolute ;
+    top: 160PX;
+    font-size: 20px;
+    text-transform:capitalize ;
+    }
+    .aside .logo
+    {
+    position:absolute ;
+    top: 550PX;
+    font-size: 1px;
+    text-transform:capitalize ;
+    }
 }
-@media (max-width:767px)
+/*for small screeen*/
+ @media (max-width:767px)
 {
     .contact .contact-form .col-6, 
     .contact .contact-info-item,
@@ -933,5 +952,6 @@ h3.my-profession
     {
         flex:0 0 100%;
         max-width: 100%;
-    }
+    }  
+
 }
