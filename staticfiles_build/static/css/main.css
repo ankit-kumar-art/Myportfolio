@@ -864,4 +864,95 @@ h3.my-profession
     padding:0 50px;
 
 }
+@media (max-width:1199px)
+{
+    .section .container
+    {
+        padding-top: 70px;
+    }
+    .aside
+    {
+        left: -270px;
+    }
+    .aside.open
+    {
+        left: 0;
+    }
+    .aside .nav-toggler
+    {
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open
+    {
+        left: 300px;
+    }
+    .section
+    {
+        left:0 ;
+    }
+    .section.open
+    {
+        left: 270px;
+    }
+    .about .about-content .personal-info .info-item p span
+    {
+    display: block;
+    margin-left: 0;
+    }
+    .main-content
+    {
+        padding-left: 0;
+    }
+}
+@media (max-width:991px)
+{
+    .contact .contact-info-item,
+    .project .project-item,
+    .service .service-item
+    {
+        flex:0 0 50%;
+        max-width: 50%;
+    }
+    .home .home-info 
+    {
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img
+    {
+        display: none;
+    }
+    .aside .logo2
+    {
+    position:absolute ;
+    top: 160PX;
+    font-size: 20px;
+    text-transform:capitalize ;
+    }
+    .aside .logo
+    {
+    position:absolute ;
+    top: 550PX;
+    font-size: 1px;
+    text-transform:capitalize ;
+    }
+}
+/*for small screeen*/
+ @media (max-width:767px)
+{
+    .contact .contact-form .col-6, 
+    .contact .contact-info-item,
+    .project .project-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info
+    {
+        flex:0 0 100%;
+        max-width: 100%;
+    }  
+
+}
 
