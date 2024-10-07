@@ -946,7 +946,7 @@ h3.my-profession
     .aside .logo
     {
     position:absolute ;
-    top: 580PX;
+    top: 550PX;
     font-size: 1px;
     text-transform:capitalize ;
     }
@@ -966,5 +966,22 @@ h3.my-profession
         flex:0 0 100%;
         max-width: 100%;
     }  
-
+/* project color modification */
+}
+.project-item .project-img h6 span
+{
+    color: var(--skin-color);
+    text-transform: capitalize;
+}
+.project-item .project-img h6
+{
+    color: var(--text-black-700);
+}
+.project-item .project-img h4
+{
+    color: var(--text-black-900);
+}
+.project-item .project-img p
+{
+    color: var(--text-black-700);
 }
