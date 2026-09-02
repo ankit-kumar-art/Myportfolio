@@ -1,5 +1,3 @@
-
-
 from pathlib import Path
 from django.contrib.messages import constants as messages
 from decouple import config
@@ -16,10 +14,8 @@ SECRET_KEY = 'django-insecure-+saf(h^(7+&82p-sx@$b925*5=a-hm9x)z^8)+btyoz$x7vk9a
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app']
-=======
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app', '.now.sh']
 
 # Vercel sits in front of the app as an HTTPS proxy. Without these two
 # settings, Django can't tell the request was actually HTTPS and the
@@ -27,7 +23,6 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 # locally over plain http://127.0.0.1).
 CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
->>>>>>> df342f2980e10fa22e16b5a695560c339f08b30c
 
 
 # Application definition
@@ -121,7 +116,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 import os
-STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
@@ -130,8 +125,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-MESSAGE_TAGS={
-    messages.ERROR:'danger'
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
 }
 
 # Email settings — sends a notification to CONTACT_NOTIFY_EMAIL whenever
