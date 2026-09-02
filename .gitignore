@@ -1,2 +1,5 @@
-
 .env
+staticfiles_build/
+__pycache__/
+*.pyc
+db.sqlite3
