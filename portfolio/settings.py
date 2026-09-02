@@ -2,6 +2,7 @@
 
 from pathlib import Path
 from django.contrib.messages import constants as messages
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,9 +15,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+saf(h^(7+&82p-sx@$b925*5=a-hm9x)z^8)+btyoz$x7vk9a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS =['.vercel.app', '.now.sh']
+DEBUG = True
+ALLOWED_HOSTS =[]
+# ALLOWED_HOSTS =['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -120,3 +121,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MESSAGE_TAGS={
     messages.ERROR:'danger'
 }
+
+# Email settings — sends a notification to CONTACT_NOTIFY_EMAIL whenever
+# someone submits the contact form. Credentials come from environment
+# variables (.env locally, or the host's environment variables settings
+# panel in production) — never hardcoded here.
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+CONTACT_NOTIFY_EMAIL = config('CONTACT_NOTIFY_EMAIL', default=EMAIL_HOST_USER)

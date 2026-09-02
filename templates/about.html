@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About | Ankit Kumar{% endblock %}
+
+{% block content %}
+<section class="about active section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>About me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-content padd-15">
+                <div class="row">
+                    <div class="about-text">
+                        <h3>Hello<span>Everyone</span></h3>
+                        <p>My name is Ankit kumar. I have completed My Bachelor of Computer Application (BCA) degree from Gopal Narayan Singh University, Sasaram, Bihar. I was born and raised in dehri, Bihar. It is here that I developed my passion for technology and decided to pursue a career in this field. I am eager to apply the knowledge and skills I have acquired during my studies to solve real-world problems and make a positive impact on society.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="personal-info padd-15">
+                        <div class="row">
+                            <div class="info-item">
+                                <p>Birthday: <span>1 March 2004</span></p>
+                            </div>
+                            <div class="info-item">
+                                <p>Age: <span>22</span></p>
+                            </div>
+                            <div class="info-item">
+                                <p>Website: <span>www.website.com</span></p>
+                            </div>
+                            <div class="info-item">
+                                <p>Email: <span>developerankit213@gmail.com</span></p>
+                            </div>
+                            <div class="info-item">
+                                <p>Degree: <span>Bachelor</span></p>
+                            </div>
+                            <div class="info-item">
+                                <p>Phone: <span>8709744261</span></p>
+                            </div>
+                            <div class="info-item">
+                                <p>City: <span>Dehri</span></p>
+                            </div>
+                            <div class="info-item">
+                                <p>Freelance: <span>Available</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="buttons padd-15">
+                                <a href="{% url 'contact' %}" class="btn hire-me">Hire me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills padd-15">
+                        <div class="row">
+                            <div class="skill-item padd-15">
+                                <h5>PYTHON</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:90%;"></div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>DJANGO</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:90%;"></div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>HTML</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:85%;"></div>
+                                    <div class="skill-percent">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>CSS</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:80%;"></div>
+                                    <div class="skill-percent">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>JAVASCRIPT</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width:70%;"></div>
+                                    <div class="skill-percent">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="education ">
+                        <h3 class="title">Education</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i>2018 - 2019
+                                        </h3>
+                                        <h4 class="timeline-title">Secondary Education</h4>
+                                        <p class="timeline-text">I have completed my Secondary edcuation from Model School Dalmainagar, Dehri (rohtas) where I passed with a commendable percentage(%) 70.2</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i>2019 - 2021
+                                        </h3>
+                                        <h4 class="timeline-title">High School </h4>
+                                        <p class="timeline-text">I have completed my higher edcuation from jag jivan college, Dehri (rohtas) where I passed with a commendable percentage(%) 67.7</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i>2021 - 2024
+                                        </h3>
+                                        <h4 class="timeline-title">Bachelor of computer application(BCA)</h4>
+                                        <p class="timeline-text">I pursued my Bachelor of Computer Application (BCA) at Gopal Narayan Singh University, Sasaram (GNSU) where I graduated with a commendable CGPA of 7.77. During my academic journey, I developed a strong foundation in analytics & programming, particularly in Python.
+                                             Additionally, I have intermediate-level skills in c/c++,
+                                             demonstrating a diverse skill set that extends to analytics and web application.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

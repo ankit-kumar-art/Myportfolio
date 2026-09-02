@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>{% block title %}Portfolio | Ankit Kumar{% endblock %}</title>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- style switcher -->
+    <link rel="stylesheet" href="{% static 'color/color-1.css' %}" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="{% static 'color/color-2.css' %}" class="alternate-style" title="color-2">
+    <link rel="stylesheet" href="{% static 'color/color-3.css' %}" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="{% static 'color/color-4.css' %}" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="{% static 'color/color-5.css' %}" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}">
+    <!-- CSS files end -->
+</head>
+
+<body>
+    <!-- Main container start -->
+    <div class="main-container">
+        <!-- Aside start -->
+        <div class="aside">
+            <div class="logo3">
+                <div class="profile-img">
+                    <img src="{% static 'img/profile1.jpg' %}" alt="" class="img-fluid rounded-circle">
+                </div>
+            </div>
+            <div class="logo">
+                <a href="{% url 'home' %}"><span>A</span>ankit</a>
+            </div>
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="{% url 'skills' %}" class="{% if request.resolver_match.url_name == 'skills' %}active{% endif %}"><i class="fa fa-list"></i>Skills</a></li>
+                <li><a href="{% url 'projects' %}" class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+            <div class="logo2">
+                <div class="social-links">
+                    <a href="https://x.com/DeveloperA18482" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ankit.47x/" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/ankit-kumar-art" class="github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ankit-kumar460/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Aside End -->
+
+        <!-- Main content start -->
+        <div class="main-content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <!-- Main content End -->
+    </div>
+    <!-- Main container end -->
+
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End -->
+
+    <!-- JS files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/style-switcher.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+    <!-- JS files end -->
+</body>
+
+</html>

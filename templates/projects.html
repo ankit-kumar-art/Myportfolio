@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Projects | Ankit Kumar{% endblock %}
+
+{% block content %}
+<section class="project active section" id="project">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="project-heading">
+                <h2>My Last Projects:</h2>
+            </div>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- Rock-Paper-Scissors -->
+            <div class="project-card shadow-dark">
+                <div class="project-card-img">
+                    <img src="{% static 'img/rock.jpg' %}" alt="Rock Paper Scissors">
+                </div>
+                <div class="project-card-body">
+                    <h4>Rock-Paper-Scissors Game</h4>
+                    <h6>HTML &bull; CSS &bull; JavaScript</h6>
+                    <p>A classic browser game with score tracking against the computer.</p>
+                    <div class="project-card-links">
+                        <a href="https://github.com/ankit-kumar-art/Rock-Paper-Scissors-Game.git"><i class="fas fa-link"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tic-Tac-Toe -->
+            <div class="project-card shadow-dark">
+                <div class="project-card-img">
+                    <img src="{% static 'img/Tic_Tac.png' %}" alt="Tic Tac Toe">
+                </div>
+                <div class="project-card-body">
+                    <h4>Tic-Tac-Toe Game</h4>
+                    <h6>HTML &bull; CSS &bull; JavaScript</h6>
+                    <p>A simple two-player Tic-Tac-Toe game with win detection.</p>
+                    <div class="project-card-links">
+                        <a href="https://github.com/ankit-kumar-art/Tic-Tac-Toe-Game.git"><i class="fas fa-link"></i>Code</a>
+                        <a href="https://tic-tac-toe-8-game.netlify.app/"><i class="fas fa-cog fa-spin"></i>Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ecommerce -->
+            <div class="project-card shadow-dark">
+                <div class="project-card-img">
+                    <img src="{% static 'img/project2.jpg' %}" alt="Ecommerce Website">
+                </div>
+                <div class="project-card-body">
+                    <h4>Ecommerce Website</h4>
+                    <h6>Django &bull; PostgreSQL &bull; Bootstrap</h6>
+                    <p>Full-stack store with Stripe payments, auth, and an admin dashboard for products &amp; orders.</p>
+                    <div class="project-card-links">
+                        <a href="https://github.com/ankit-kumar-art/E-commerce-Django-Project.git"><i class="fas fa-link"></i>Code</a>
+                        <a href="https://ecommerce-django-project.vercel.app/"><i class="fas fa-cog fa-spin"></i>Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Resume Matcher -->
+            <div class="project-card shadow-dark">
+                <div class="project-card-img">
+                    <img src="{% static 'img/resume-matcher.png' %}" alt="AI Resume Matcher">
+                </div>
+                <div class="project-card-body">
+                    <h4>AI Resume Matcher</h4>
+                    <h6>Django &bull; OpenRouter API &bull; Pydantic</h6>
+                    <p>AI app that parses resumes and scores them against a job description with a ranked, structured verdict.</p>
+                    <div class="project-card-links">
+                        <a href="https://github.com/ankit-kumar-art/AI_resume_matcher.git"><i class="fas fa-link"></i>Code</a>
+                        <a href="https://ai-resume-matcher-fiew.onrender.com/"><i class="fas fa-cog fa-spin"></i>Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="project-card shadow-dark">
+                <div class="project-card-img">
+                    <img src="{% static 'img/project1.jpeg' %}" alt="Portfolio">
+                </div>
+                <div class="project-card-body">
+                    <h4>Portfolio</h4>
+                    <h6>HTML &bull; CSS &bull; JS &bull; Django</h6>
+                    <p>This interactive multi-page portfolio with dark mode and dynamic Django-rendered content.</p>
+                    <div class="project-card-links">
+                        <a href="https://github.com/ankit-kumar-art/Myportfolio.git"><i class="fas fa-link"></i>Code</a>
+                        <a href="https://myportfolio-rho-lyart.vercel.app"><i class="fas fa-cog fa-spin"></i>Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
