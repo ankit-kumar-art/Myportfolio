@@ -15,8 +15,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+saf(h^(7+&82p-sx@$b925*5=a-hm9x)z^8)+btyoz$x7vk9a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS =['.vercel.app', '.now.sh']
+DEBUG = True
+ALLOWED_HOSTS =[]
 
 
 # Application definition
@@ -112,7 +112,7 @@ STATIC_URL = '/static/'
 import os
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 
 # Default primary key field type
