@@ -16,7 +16,18 @@ SECRET_KEY = 'django-insecure-+saf(h^(7+&82p-sx@$b925*5=a-hm9x)z^8)+btyoz$x7vk9a
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app']
+=======
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+
+# Vercel sits in front of the app as an HTTPS proxy. Without these two
+# settings, Django can't tell the request was actually HTTPS and the
+# contact form's CSRF check fails in production (while working fine
+# locally over plain http://127.0.0.1).
+CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+>>>>>>> df342f2980e10fa22e16b5a695560c339f08b30c
 
 
 # Application definition
@@ -33,7 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',   # ← ye naya add karo
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

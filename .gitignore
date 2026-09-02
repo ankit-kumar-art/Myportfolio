@@ -1,2 +1,9 @@
 .env
+<<<<<<< HEAD
 venv/
+=======
+staticfiles_build/
+__pycache__/
+*.pyc
+db.sqlite3
+>>>>>>> df342f2980e10fa22e16b5a695560c339f08b30c
